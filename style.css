@@ -1,0 +1,147 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.head {
+    height: 30px;
+    background-color: #FFD700; 
+}
+
+.main {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #333333;
+    margin: 0px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.icon1, .icon2 {
+    margin-left: 10px; 
+    width: 20px;
+    height: 20px;
+}
+
+.none {
+    display: none; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 55px 10px 10px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 30px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+    z-index: 1; 
+}
+
+.sort-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.add-button {
+    width: 50px;
+    height: 50px;
+}
+
+.add-button:hover {
+    transform: scale(1.1); 
+}
+
+button:hover {
+    background-color: #4a00e0;
+    color: #fff;
+}
+
+.button-container img {
+    width: 60%;
+}
+
+.icons img {
+    width: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+.todo-list {
+    display: none;
+    list-style-type: decimal; 
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
