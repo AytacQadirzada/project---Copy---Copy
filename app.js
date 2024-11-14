@@ -26,13 +26,12 @@ clear.addEventListener("mouseout", ()=>{
 
 let iconX = document.querySelector(".clear-icon")
 iconX.addEventListener("click",()=>{
-    input.value = ""
+    input.value = "";
 } )
 
 
 let buttonContainer = document.querySelector(".button-container");
         let input = document.querySelector("input");
-        // let ol = document.querySelector(".todo-list");
         let ol = document.querySelector("ol");
 
         buttonContainer.addEventListener("click", () => {
